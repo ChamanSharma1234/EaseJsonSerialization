@@ -1,4 +1,7 @@
-class JsonSerialization: NSObject {
+
+import UIKit
+
+class JsonSerialization {
     static func getDictionaryFromJsonString(rowData:Data)-> Dictionary<String,AnyObject> {
         do {
             return try JSONSerialization.jsonObject(with: rowData, options:  JSONSerialization.ReadingOptions.allowFragments) as! Dictionary
