@@ -4,7 +4,7 @@ import UIKit
 public class JsonSerialization {
     public static func getDictionaryFromJsonString(rowData:Data)-> Dictionary<String,AnyObject> {
         do {
-            return try JSONSerialization.jsonObject(with: rowData, options:  JSONSerialization.ReadingOptions.allowFragments) as! Dictionary
+            return try JSONSerialization.jsonObject(with: rowData, options: JSONSerialization.ReadingOptions.allowFragments) as! Dictionary
         } catch {
             return [:]
         }
